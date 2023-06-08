@@ -1,32 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	app: {
-		pageTransition: {
-			name: 'fade',
-			mode: 'out-in', // default
-		},
-		layoutTransition: {
-			name: 'slide',
-			mode: 'out-in', // default
-		},
-		head: {
-			titleTemplate: '%s - aaj',
-			meta: [
-				{ charset: 'utf-8' },
-				{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-				{ hid: 'description', name: 'description', content: '' },
-				{ name: 'format-detection', content: 'telephone=no' },
-			],
-			link: [
-				{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-				{
-					rel: 'stylesheet',
-					href: 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap',
-				},
-			],
-		},
-	},
 	alias: {
 		assets: '/<rootDir>/assets',
 	},
@@ -36,7 +10,8 @@ export default defineNuxtConfig({
 		'@mdi/font/css/materialdesignicons.min.css',
 		'vue-toast-notification/dist/theme-default.css',
 	],
-	build: { transpile: ['vuetify'] },
-	// modules: ['@vee-validate/nuxt'],
+	build: {
+		transpile: ['vuetify'],
+	},
 });
 

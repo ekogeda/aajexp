@@ -37,6 +37,6 @@ export default defineNuxtConfig({
 		'vue-toast-notification/dist/theme-default.css',
 	],
 	build: { transpile: ['vuetify'] },
-	modules: ['@vee-validate/nuxt'],
+	// modules: ['@vee-validate/nuxt'],
 });
 

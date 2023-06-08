@@ -10,8 +10,8 @@ export default defineNuxtConfig({
 		'@mdi/font/css/materialdesignicons.min.css',
 		'vue-toast-notification/dist/theme-default.css',
 	],
-	build: {
-		transpile: ['vuetify'],
-	},
+	// build: {
+	// 	transpile: ['vuetify'],
+	// },
 });
 

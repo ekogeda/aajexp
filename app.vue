@@ -2,11 +2,11 @@
 useHead({
   titleTemplate: '%s - AAJExp',
   // ... or as a function
-  titleTemplate: (productCategory) => {
-    return productCategory
-      ? `${productCategory} - AAJExp`
-      : 'AAJExp'
-  }
+  // titleTemplate: (productCategory) => {
+  //   return productCategory
+  //     ? `${productCategory} - AAJExp`
+  //     : 'AAJExp'
+  // }
 })
 </script>
 

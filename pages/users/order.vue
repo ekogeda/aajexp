@@ -7,13 +7,11 @@ definePageMeta({ layout: "users" });
     <v-layout>
       <v-row>
         <v-col cols="12">
-          <Order />
-          <!-- <OrderTable /> -->
+          <TransactionTable />
         </v-col>
       </v-row>
     </v-layout>
   </v-container>
 </template>
-
 
 <style lang="scss" scoped></style>

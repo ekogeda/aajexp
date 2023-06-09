@@ -149,8 +149,8 @@ const onSubmit = (formObj) => {
 </script>
 
 <template>
-  <OrderFormWizard :validation-schema="validationSchema" @submit="onSubmit" @currentStepIdx="handleIdx">
-    <OrderFormStep>
+  <TransactionFormWizard :validation-schema="validationSchema" @submit="onSubmit" @currentStepIdx="handleIdx">
+    <TransactionFormStep>
       <v-row class="align-center">
         <v-col cols="12" sm="8">
           <h4>{{ selected }}</h4>
@@ -227,9 +227,9 @@ const onSubmit = (formObj) => {
           </Field>
         </v-col>
       </v-row>
-    </OrderFormStep>
+    </TransactionFormStep>
 
-    <OrderFormStep>
+    <TransactionFormStep>
       <v-row>
         <v-col cols="12">
           <Field name="receiverName" v-slot="{ field, errors }">
@@ -289,9 +289,9 @@ const onSubmit = (formObj) => {
           </Field>
         </v-col>
       </v-row>
-    </OrderFormStep>
+    </TransactionFormStep>
 
-    <OrderFormStep>
+    <TransactionFormStep>
       <v-row v-for="(textField, i) in descFields" :key="i">
         <div v-if="i != 0" class="my-8 w-100 border-sm bg-red" />
         <v-col cols="12">
@@ -322,9 +322,9 @@ const onSubmit = (formObj) => {
           <v-btn @click="add" color="green" class="w-100 rounded-pill">Add another item</v-btn>
         </v-col>
       </v-row>
-    </OrderFormStep>
+    </TransactionFormStep>
 
-    <OrderFormStep>
+    <TransactionFormStep>
       <v-row class="checked">
         <v-col cols="12">
           <h3>Select Service Type</h3>
@@ -346,9 +346,9 @@ const onSubmit = (formObj) => {
           </v-radio-group>
         </v-col>
       </v-row>
-    </OrderFormStep>
+    </TransactionFormStep>
 
-    <OrderFormStep>
+    <TransactionFormStep>
       <v-row class="checked">
         <v-col cols="12">
           <h3>Apply Insurance</h3>
@@ -368,9 +368,9 @@ const onSubmit = (formObj) => {
           </v-radio-group>
         </v-col>
       </v-row>
-    </OrderFormStep>
+    </TransactionFormStep>
 
-    <OrderFormStep>
+    <TransactionFormStep>
       <v-row class="mb-8">
         <v-col cols="12">
           <h3>Quote</h3>
@@ -405,9 +405,9 @@ const onSubmit = (formObj) => {
           </v-card>
         </v-col>
       </v-row>
-    </OrderFormStep>
+    </TransactionFormStep>
 
-    <OrderFormStep>
+    <TransactionFormStep>
       <h3>Summary & Payment</h3>
 
       <v-card class="text-center mb-8">
@@ -484,8 +484,8 @@ const onSubmit = (formObj) => {
           </p>
         </details>
       </div>
-    </OrderFormStep>
-  </OrderFormWizard>
+    </TransactionFormStep>
+  </TransactionFormWizard>
 </template>
 
 <style scoped>

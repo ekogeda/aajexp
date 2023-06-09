@@ -13,5 +13,6 @@ export default defineNuxtConfig({
 	build: {
 		transpile: ['vuetify'],
 	},
+	modules: ['@vee-validate/nuxt'],
 });
 

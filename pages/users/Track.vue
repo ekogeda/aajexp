@@ -36,7 +36,7 @@ const handleTrackOrder = handleSubmit(values => {
 </script>
 
 <template>
-  <v-container class="my-16">
+  <v-container fluid class="my-16">
     <v-row class="mb-5">
       <v-col cols="12" lg="6" md="8" sm="12" class="mx-auto">
         <v-card class="my-4 px-4">

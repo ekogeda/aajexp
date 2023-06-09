@@ -222,7 +222,7 @@ onMounted(() => {
 
                       <v-card-text>
                         <v-container>
-                          <Order @submitOrder="handleSubmitOrder" />
+                          <Transaction @submitOrder="handleSubmitOrder" />
                         </v-container>
                       </v-card-text>
 

@@ -170,7 +170,6 @@ const onSubmit = (formObj) => {
 
       <v-row>
         <v-col cols="12">
-          {{ senderName }}
           <Field name="senderName" v-slot="{ field, errors }">
             <v-text-field v-model.trim.lazy="senderName" density="compact" v-bind="field" label="Name of sender"
               :error-messages="errors" variant="underlined" :counter="2" />
